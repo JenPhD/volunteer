@@ -1,0 +1,44 @@
+{
+  "name": "volunteer",
+  "version": "1.0.1",
+  "description": "A travel/volunteer website",
+  "main": "server.js",
+  "scripts": {
+    "test": "jasmine",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JenPhD/volunteer.git"
+  },
+  "keywords": [
+    "volunteer",
+    "express",
+    "node",
+    "sequelize",
+    "jasmine",
+    "mysql"
+  ],
+  "author": "Jen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JenPhD/volunteer/issues"
+  },
+  "homepage": "https://github.com/JenPhD/volunteer#readme",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.14.1",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "path": "^0.12.7",
+    "sequelize": "^3.24.3",
+    "sequelize-cli": "^2.4.0",
+    "serve-favicon": "^2.3.0"
+  }
+}
