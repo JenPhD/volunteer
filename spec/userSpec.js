@@ -24,7 +24,7 @@ describe('create username and password', function(){
 
 	it('sumbit function of username form', function(){
 		expect(submit).toequal(submit);
-	});
+	})
 
 
 });
