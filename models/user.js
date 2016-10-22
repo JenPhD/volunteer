@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     // disable the modification of tablenames
     freezeTableName: true,
     // define the table's name
-    tableName: 'trips',
+    tableName: 'users',
     classMethods: {
       associate: function(models) {
         // associations can be defined here

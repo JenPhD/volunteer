@@ -1,14 +1,11 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Trip = sequelize.define('Trip', {
-    voljob: DataTypes.STRING,
     depcity: DataTypes.STRING,
     destcity: DataTypes.STRING,
-    depfly: DataTypes.STRING,
-    retfly: DataTypes.STRING,
     depart: DataTypes.DATE,
     return: DataTypes.DATE,
-    hotelurl: DataTypes.STRING
+    numvol: DataTypes.INTEGER
   }, {
     // so updatedAt will be updated_at
     underscored: true,
