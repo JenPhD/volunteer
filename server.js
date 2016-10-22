@@ -37,7 +37,7 @@ app.set('view engine', 'handlebars');
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 
 //Configure public web folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/assets', express.static(path.join(__dirname, 'public', 'assets')));
 
 //Configure body-parser middleware
 var bodyParser = require('body-parser');
