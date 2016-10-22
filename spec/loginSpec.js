@@ -21,7 +21,7 @@ describe('login', function(){
 	it('error message displays when information has been submitted incorrectly or left blank', function(){
 		expect(login.error).tothrowError('Please enter the required information.');
 		expect(login.error).tothrowError(typeError);
-	})
+	});
 
 		it('sumbit function of username form', function(){
 		expect(login).toequal(login);

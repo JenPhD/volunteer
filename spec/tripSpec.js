@@ -7,7 +7,7 @@
 // 	var trip;
 // 	var submit = function(){
 // 		throw new TypeError("error");
-// 	}
+// 	};
 			
 // 	it('Will display nothing when form is empty.', function(){
 // 	expect(submit()).tobe(" ");
