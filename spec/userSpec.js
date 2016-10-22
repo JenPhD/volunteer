@@ -1,7 +1,7 @@
 // Jasmine unit testing to determine if form, submit, and error message function are working properly //
 
 describe('create username and password', function(){
-
+		
 	// var UserInfo = require("........");
 
 // not sure if we will need these but I put them in just incase //
