@@ -1,44 +1,114 @@
-/*Adds the image background to webpage in all browsers and makes fonts white*/
 body {
-	background: url(/assets/img/balloons.jpg) no-repeat center center fixed;
-	 -webkit-background-size: cover;
-	 -moz-background-size: cover;
-	 -o-background-size: cover;
-  	background-size: cover;
-  	color: white;
+	font-family: sans-serif;
+	background:url(../img/Seattle_WA.jpg) no-repeat center center fixed;
 }
-/*gives container a background color, adds opacity and moves container down from the top of the webpage*/
-.main-container{
-	background: rgba(54, 25, 25, .3);
-	margin: 20px;
-
+header{
+	width:100%;
+	padding:40px 0px;;
+	color:white;
+	text-align:center;
+	height:200px;
 }
-.page-header{
-	position: relative;
-	border-bottom: none;
-}
-
-h1 {
-	font-family: 'Pacifico', cursive;
+.typewrite{
+	color:white;
+	text-decoration:none;
+	width:100%;
+	text-align:center;
 	font-size: 64px;
-	color: white;
-	padding: 10px;
 }
-
-h2 {
-	padding-left: 100px;
-	color: white;
-	font-family: 'Pacifico', cursive;
-
+nav ul{
+	overflow:hidden;
+	padding:20px;
+	text-align:center;
+	margin:0;	
 }
-
+<!-- nav ul li{
+	display:inline-block;
+	padding: 20px;
+	float:right;
+} -->
 #login{
-	float: right;
-	margin:20px;
+	float:right;
+}
+.mainContent{
+	background: white;
+	height:300px;
+	width:100%;
+	margin-top:5%;
+}
+#information{
+	padding:30px 30px;
+	text-align:center;
+}
+.plane{
+	font-size:48px;
+	text-align:center;
+}
+.heart{
+	font-size:48px;
+	text-align:center;
+}
+.hotel{
+	font-size:48px;
+	text-align:center;
+}
+@media(max-width:850px){
+	.mainContent{
+		height:400px;
+		margin-top:5%;
+	}
+	.plane{
+	font-size:32px;
+	text align:center;
+	}
+	.heart{
+	font-size:32px;
+	text align:center;
+	}
+	.hotel{
+	font-size:32px;
+	text align:center;
+	}
+}
+@media(max-width:750px){
+	.mainContent{
+		height:600px;
+		margin-top:15%;
+	}
+	.plane{
+	font-size:32px;
+	text align:center;
+	}
+	.heart{
+	font-size:32px;
+	text align:center;
+	}
+	.hotel{
+	font-size:32px;
+	text align:center;
+	}
+}
+@media(max-width:550px){
+	.mainContent{
+		height:600px;
+		margin-top:30%;
+	}
+	.plane{
+	font-size:32px;
+	text align:center;
+	}
+	.heart{
+	font-size:32px;
+	text align:center;
+	}
+	.hotel{
+	font-size:32px;
+	text align:center;
+	}
 }
 
 
-#form-container{
+/*#form-container{
 	padding: 50px;
 
 }
@@ -85,7 +155,7 @@ p{
 }
 
 /*need to come and fix this*/
-a .scroll{
+/*a .scroll{
 	text-decoration: none;
 	float: right;
 	font-size: 14px;
@@ -105,7 +175,7 @@ a .scroll{
 }
 
 div.c-wrapper{
-    width: 80%; /* for example */
+    width: 80%;*/ /* for example 
     margin: auto;
 }
 
@@ -115,7 +185,7 @@ width: 100%; /* use this, or not */
 margin: auto;
 }
 
-#featured-destinations{
+/*#featured-destinations{
 	padding: 20px;
 }
 
@@ -161,7 +231,7 @@ margin: auto;
 #submit3.btn {
 	margin: 10px;
 }
-/* styling volunteer info */
+ styling volunteer info 
 
 .volOpp {
 	text-align: center;
@@ -222,7 +292,7 @@ margin: auto;
 	text-shadow: 0px 0px;
 }
 
-/* styling flights */
+ styling flights 
 
 .whiteText {
 	background-color: rgba(217, 179, 140, .4);
@@ -231,7 +301,7 @@ margin: auto;
 	line-height: 1.5;
 	padding: 10px;
 	text-shadow: 1.3px 1.3px #140d06;
-}
+}*/
 
 
 
