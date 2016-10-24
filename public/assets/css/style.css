@@ -9,6 +9,15 @@ header{
 	text-align:center;
 	height:200px;
 }
+
+.sign > a {
+	color: white;
+}
+
+.sign {
+	color: white;
+}
+
 .typewrite{
 	color:white;
 	text-decoration:none;

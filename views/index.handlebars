@@ -10,6 +10,13 @@
 		<nav>
 			<ul>
 				<button class="btn btn-default dropdown-toggle" id="login">Sign In <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                {{#if name}}
+                    Welcome {{name}}!
+                {{/if}}
+
+                {{#unless logged_in}}
+                    <p> Sign up to plan your volunteer trip!! </p>
+                {{/unless}}
 			</ul>
 		</nav>
 	</header>
