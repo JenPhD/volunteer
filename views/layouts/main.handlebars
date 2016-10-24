@@ -20,15 +20,27 @@
 	<!-- Site specific overrides -->
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <!-- Local javascript operations file -->
-    <script src="assets/javascript/app.js"></script>
+    <script src="/assets/javascript/app.js"></script>
 
 </head>
 <body>
 
+<p class="sign" align="right">
+    {{#unless logged_in}}
+        <a href="/users/sign-in">Sign In</a>
+        <a href="/users/new">Sign Up</a>
+    {{/unless}}
+
+    {{#if logged_in}}
+        Welcome {{name}}! <br>
+        <a href="/users/sign-out">Sign Out</a>
+    {{/if}}
+</p>
+
 	{{{ body }}}
 
 	<!-- jQuery 2.2.4 -->
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>

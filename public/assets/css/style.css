@@ -1,6 +1,6 @@
 body {
 	font-family: sans-serif;
-	background:url(../img/Seattle_WA.jpg) no-repeat center center fixed;
+	background:url(../img/orlando.jpg) no-repeat center center fixed;
 }
 header{
 	width:100%;
@@ -9,6 +9,15 @@ header{
 	text-align:center;
 	height:200px;
 }
+
+.sign > a {
+	color: white;
+}
+
+.sign {
+	color: white;
+}
+
 .typewrite{
 	color:white;
 	text-decoration:none;
@@ -22,11 +31,21 @@ nav ul{
 	text-align:center;
 	margin:0;	
 }
-<!-- nav ul li{
+a{
+	text-decoration: none;
+	color:white;
+	padding:0px 20px;
+}
+a:hover{
+	text-decoration: none;
+	color:white;
+}
+
+/*nav ul li{
 	display:inline-block;
 	padding: 20px;
 	float:right;
-} -->
+} */
 #login{
 	float:right;
 }

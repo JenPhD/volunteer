@@ -1,15 +1,20 @@
 <div class="main-container"> <!-- container for all website content -->
 	<header>  <!--tpyewriter effect and sign in for users -->
+		
+		{{!-- {{#unless logged_in}}
+                    <a href="#" style="float:right;" class="clearfix"> Sign up to plan your volunteer trip!! </a>
+                {{/unless}} --}}
+		
 		<div id="typewriter">
-			<h1>
-			<a href="" class="typewrite" data-period="2000" data-type='["Seattle,WA","Los Angeles,CA","Orlando,FL","Volunteer There...", "Volunteer Anywhere", "Your Adventure Awaits!"]'>
+			<h1 class="typewrite" data-period="2000" data-type='["Seattle,WA","Los Angeles,CA","Orlando,FL","Volunteer There...", "Volunteer Anywhere", "Your Adventure Awaits!"]'>
 			<span class="wrap"></span>
-			</a>
 			</h1>
 		</div>
 		<nav>
 			<ul>
-				<button class="btn btn-default dropdown-toggle" id="login">Sign In <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                {{#if name}}
+                    Welcome {{name}}!
+                {{/if}}
 			</ul>
 		</nav>
 	</header>
