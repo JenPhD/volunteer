@@ -77,11 +77,11 @@ var TxtType = function(el, toRotate, period) {
 	//name is self explanitory
 	var flightsApi_key="AIzaSyBr16jPmqapuVUibOLWLQ_2Guo7ULu29V4";
 	//get info from site
-	var startDest=null;
-	var endDest=null;
-	var startDate=null;
-	var endDate=null;
-	var numPeople=0;
+	var depcity=null;
+	var destcity=null;
+	var departdate=null;
+	var returndate=null;
+	var numvol=0;
 
 	var cityToAirport={
      "Aberdeen, SD":"ABR","Abilene, TX":"ABI","Akron, OH":"CAK","Alamosa, CO":"ALS","Albany, GA":"ABY","Albany, NY":"ALB","Albuquerque, NM":"ABQ","Alexandria, LA":"AEX","Allentown, PA":"ABE","Alliance, NE":"AIA","Alpena, MI":"APN","Altoona, PA":"AOO","Amarillo, TX":"AMA","Anchorage, AK":"ANC","Appleton, WI":"ATW","Asheville, NC":"AVL","Aspen, CO":"ASE","Athens, GA":"AHN","Atlanta, GA":"ATL","Atlantic City, NJ":"ACY","Augusta, GA":"AGS","Augusta, ME":"AUG","Austin, TX":"AUS","Bagotville, PQ":"YBG","Baie-Comeau, PQ":"YBC","Bakersfield, CA":"BFL","Baltimore, MD":"BWI","Bangor, ME":"BGR","Bar Harbor, ME":"BHB","Barrow, AK":"BRW","Baton Rouge, LA":"BTR","Beaumont, TX":"BPT","Beckley, WV":"BKW","Bedford, MA":"BED","Bellingham, WA":"BLI","Bemidji, MN":"BJI","Bethel, AK":"BET","Bettles, AK":"BTT","Billings, MT":"BIL","Binghamton, NY":"BGM","Birmingham, AL":"BHM","Bismarck, ND":"BIS","Bloomington, IL":"BMI","Bloomington, IN":"BMG","Bluefield, WV":"BLF","Boise, ID":"BOI","Boston, MA":"BOS","Bozeman, MT":"BZN","Brookings, SD":"BKX","Brownsville, TX":"BRO","Brunswick, GA":"BQK","Buffalo, NY":"BUF","Burbank, CA":"BUR","Burlington, IA":"BRL","Burlington, MA":"BBF","Burlington, VT":"BTV","Butte, MT":"BTM","Cape Girardeau, MO":"CGI","Carlsbad, CA":"CLD","Carlsbad, NM":"CNM","Casper, WY":"CPR","Cedar Rapids, IA":"CID","Champaign, IL":"CMI","Charleston, SC":"CHS","Charleston, WV":"CRW","Charlotte, NC":"CLT","Charlottesville, VA":"CHO","Chattanooga, TN":"CHA","Cheyenne, WY":"CYS","Chicago, IL MDW":"MDW","Chicago, IL ORD":"ORD","Chicago, IL CHI":"CHI","Chico, CA":"CIC","Cincinnati, OH":"CVG","Clarksburg, WV":"CKB","Cleveland, OH":"CLE","Clovis, NM":"CVN","Cody, WY":"COD","College Station, TX":"CLL","Colorado Springs, CO":"COS","Columbia, MO":"COU","Columbia, SC":"CAE","Columbus, GA":"CSG","Columbus, IN":"CLU","Columbus, MS":"GTR","Columbus, NE":"OLU","Columbus, OH":"CMH","Cordova, AK":"CDV","Corpus Christi, TX":"CRP","Dallas, TX DFW":"DFW","Dallas, TX DAL":"DAL","Dayton, OH":"DAY","Daytona Beach, FL":"DAB","Decatur, IL":"DEC","Denver, CO":"DEN","Des Moines, IA":"DSM","Detroit, MI DTW":"DTW","Detroit, MI DTT":"DTT","Devils Lake, ND":"DVL","Dickinson, ND":"DIK","Dillingham, AK":"DLG","Dodge City, KS":"DDC","Dothan, AL":"DHN","Dryden, ON":"YHD","Du Bois, PA":"DUJ","Dubuque, IA":"DBQ","Duluth, MN":"DLH","Durango, CO":"DRO","Dutch Harbor, Un Island, AK":"DUT","Eau Claire, WI":"EAU","Eek, AK":"EEK","El Centro, CA":"IPL","El Dorado, AR":"ELD","El Paso, TX":"ELP","Elko, NV":"EKO","Elmira, NY":"ELM","Enid, OK":"WDG","Erie, PA":"ERI","Escanaba, MI":"ESC","Eugene, OR":"EUG","Eureka, CA":"ACV","Evansville, IN":"EVV","Fairbanks, AK":"FAI","Fargo, ND":"FAR","Farmington, NM":"FMN","Fayetteville, AR":"XNA","Fayetteville, NC":"FAY","Flagstaff, AZ":"FLG","Flint, MI":"FNT","Florence, SC":"FLO","Fort Dodge, IA":"FOD","Fort Lauderdale, FL":"FLL","Fort Leonard Wood, MO":"TBN","Fort Myers, FL":"RSW","Fort Smith, AR":"FSM","Fort Walton Beach, FL":"VPS","Fort Wayne, IN":"FWA","Fort Yukon, AK":"FYU","Fresno, CA":"FAT","Gainesville, FL":"GNV","Garden City, KS":"GCK","Gillette, WY":"GCC","Glendive, MT":"GDV","Grand Forks, ND":"GFK","Grand Island, NE":"GRI","Grand Junction, CO":"GJT","Grand Rapids, MI":"GRR","Great Bend, KS":"GBD","Great Falls, MT":"GTF","Green Bay, WI":"GRB","Greenbrier, WV":"LWB","Greensboro, NC":"GSO","Greenville, MS":"GLH","Greenville, NC":"PGV","Greenville, SC":"GSP","Gulfport, MS":"GPT","Gunnison, CO":"GUC","Hagerstown, MD":"HGR","Hana, Maui, HI":"HNM","Hancock, MI":"CMX","Harlingen, TX":"HRL","Harrisburg, PA":"MDT","Harrison, AR":"HRO","Hartford, CT":"BDL","Havre, MT":"HVR","Hays, KS":"HYS","Helena, MT":"HLN","Hibbing, MN":"HIB","Hilo, Hawaii":"Big","Hilton Head Island, SC":"HHH","Hobbs, NM":"HOB","Homer, AK":"HOM","Honolulu, Oahu, HI":"HNL","Hoolehua, Molokai, HI":"MKK","Hot Springs, AR":"HOT","Houston, TX IAH":"IAH","Houston, TX HOU":"HOU","Houston, TX EFD":"EFD","Huntington, WV":"HTS","Huntsville, AL":"HSV","Huron, SD":"HON","Hyannis, MA":"HYA","Idaho Falls, ID":"IDA","Indianapolis, IN":"IND","International Falls, MN":"INL","Inyokern, CA":"IYK","Iron Mountain, MI":"IMT","Ironwood, MI":"IWD","Islip, NY":"ISP","Ithaca, NY":"ITH","Jackson Hole, WY":"JAC","Jackson, MS":"JAN","Jackson, TN":"MKL","Jacksonville, FL":"JAX","Jacksonville, NC":"OAJ","Jamestown, ND":"JMS","Jamestown, NY":"JHW","Johnstown, PA":"JST","Jonesboro, AR":"JBR","Joplin, MO":"JLN","Juneau, AK":"JNU","Kahului, Maui, HI":"OGG","Kailua-Kona, Hawaii":"Big","Kalamazoo, MI":"AZO","Kalaupapa, Molokai, HI":"LUP","Kalispell, MT":"FCA","Kamuela, Hawaii":"Big","Kansas City, MO":"MCI","Kapalua, Maui, HI":"JHM","Kearney, NE":"EAR","Kenai, AK":"ENA","Ketchikan, AK":"KTN","Key West, FL":"EYW","Killeen, TX":"GRK","King Salmon, AK":"AKN","Kingman, AZ":"IGM","Kirksville, MO":"IRK","Klamath Falls, OR":"LMT","Knoxville, TN":"TYS","Kodiak, AK":"ADQ","La Crosse, WI":"LSE","Lafayette, LA":"LFT","Lake Charles, LA":"LCH","Lake Havasu City, AZ":"HII","Lanai City, Lanai, HI":"LNY","Lancaster, PA":"LNS","Lansing, MI":"LAN","Laramie, WY":"LAR","Laredo, TX":"LRD","Las Cruces, NM":"LRU","Las Vegas, NV":"LAS","Latrobe, PA":"LBE","Laurel, MS":"PIB","Lawton, OK":"LAW","Lebanon, NH":"LEB","Lewiston, ID":"LWS","Lewiston, ME":"LEW","Lewistown, MT":"LWT","Lexington, KY":"LEX","Liberal, KS":"LBL","Lihue, Kauai, HI":"LIH","Lincoln, NE":"LNK","Little Rock, AR":"LIT","Long Beach, CA":"LGB","Longview, TX":"GGG","Los Angeles, CA QLA":"QLA","Los Angeles, CA LAX":"LAX","Louisville, KY, USA":"SDF","Lubbock, TX":"LBB","Lynchburg, VA":"LYH","Macon, GA":"MCN","Madison, WI":"MSN","Manchester, NH":"MHT","Manhattan, KS":"MHK","Manistee, MI":"MBL","Marion, IL":"MWA","Marquette, MI":"MQT","Martha's Vineyard, MA":"MVY","Mason City, IA":"MCW","Massena, NY":"MSS","McAllen, TX":"MFE","McCook, NE":"MCK","Medford, OR":"MFR","Melbourne, FL":"MLB","Memphis, TN":"MEM","Meridian, MS":"MEI","Miami, FL":"MIA","Midland, TX":"MAF","Miles City, MT":"MLS","Milwaukee, WI":"MKE","Minneapolis, MN":"MSP","Minot, ND":"MOT","Missoula, MT":"MSO","Mobile, AL":"MOB","Modesto, CA":"MOD","Moline, IL":"MLI","Monroe, LA":"MLU","Monterey, CA":"MRY","Montgomery, AL":"MGM","Montrose, CO":"MTJ","Morgantown, WV":"MGW","Moses Lake, WA":"MWH","Muscle Shoals, AL":"MSL","Muskegon, MI":"MKG","Myrtle Beach, SC":"MYR","Nantucket, MA":"ACK","Naples, FL":"APF","Nashville, TN":"BNA","New Bern, NC":"EWN","New Haven, CT":"HVN","New Orleans, LA":"MSY","New York, NY JFK":"JFK","New York, NY NYC":"NYC","New York, NY LGA":"LGA","Newark, NJ":"EWR","Newburgh, NY":"SWF","Newport News, VA":"PHF","Nome, AK":"OME","Norfolk, VA":"ORF","North Bend, OR":"OTH","North Platte, NE":"LBF","Oakland, CA":"OAK","Ogdensburg, NY":"OGS","Oklahoma City, OK":"OKC","Omaha, NE":"OMA","Ontario, CA":"ONT","Orange County, CA":"SNA","Orlando, FL":"MCO","Oshkosh, WI":"OSH","Owensboro, KY":"OWB","Oxnard, CA":"OXR","Paducah, KY":"PAH","Page, AZ":"PGA","Palm Springs, CA":"PSP","Panama City, FL":"PFN","Parkersburg, WV":"PKB","Pasco, WA":"PSC","Pellston, MI":"PLN","Pendleton, OR":"PDT","Pensacola, FL":"PNS","Peoria, IL":"PIA","Philadelphia, PA":"PHL","Phoenix, AZ":"PHX","Pierre, SD":"PIR","Pinehurst, NC":"SOP","Pittsburgh, PA":"PIT","Pocatello, ID":"PIH","Ponca City, OK":"PNC","Portland, ME":"PWM","Portland, OR":"PDX","Portsmouth, NH":"PSM","Prescott, AZ":"PRC","Presque Isle, ME":"PQI","Providence, RI":"PVD","Provincetown, MA":"PVC","Pueblo, CO":"PUB","Pullman, WA":"PUW","Quincy, IL":"UIN","Raleigh, NC":"RDU","Rapid City, SD":"RAP","Redding, CA":"RDD","Redmond, OR":"RDM","Reno, NV":"RNO","Rhinelander, WI":"RHI","Richmond, VA":"RIC","Riverton, WY":"RIW","Roanoke, VA":"ROA","Rochester, MN":"RST","Rochester, NY":"ROC","Rock Springs, WY":"RKS","Rockford, IL":"RFD","Rockland, ME":"RKD","Roswell, NM":"ROW","Rutland, VT":"RUT","Sacramento, CA":"SMF","Saginaw, MI":"MBS","Salina, KS":"SLN","Salisbury, MD":"SBY","Salt Lake City, UT":"SLC","San Angelo, TX":"SJT","San Antonio, TX":"SAT","San Diego, CA":"SAN","San Francisco, CA":"QSF","San Francisco, CA":"SFO","San Jose, CA":"SJC","San Luis Obispo, CA":"SBP","Sand Point, AK":"SDP","Santa Barbara, CA":"SBA","Santa Fe, NM":"SAF","Santa Maria, CA":"SMX","Santa Rosa, CA":"STS","Saranac Lake, NY":"SLK","Sarasota, FL":"SRQ","Sault Ste. Marie, MI":"CIU","Savannah, GA":"SAV","Scottsbluff, NE":"BFF","Seattle, WA":"SEA","Shenandoah Valley Airport, VA":"SHD","Sheridan, WY":"SHR","Shreveport, LA":"SHV","Sidney, MT":"SDY","Silver City, NM":"SVC","Sioux City, IA":"SUX","Sioux Falls, SD":"FSD","Sitka, AK":"SIT","Skagway, AK":"SGY","South Bend, IN":"SBN","Spokane, WA":"GEG","Springfield, IL":"SPI","Springfield, MA":"CEF","Springfield, MO":"SGF","Springfield, VT":"VSF","St. Cloud, MN":"STC","St. George, UT":"SGU","St. Louis, MO":"STL","St. Petersburg, FL":"PIE","State College, PA":"SCE","Steamboat Springs, CO":"SBS","Sun Valley, ID":"SUN","Syracuse, NY":"SYR","Tallahassee, FL":"TLH","Tampa, FL":"TPA","Telluride, CO":"TEX","Texarkana, AR":"TXK","Thief River Falls, MN":"TVF","Toksook Bay, AK":"OOK","Toledo, OH":"TOL","Topeka, KS":"TOP","Traverse City, MI":"TVC","Trenton, NJ":"TTN","Tri-City Airport, TN":"TRI","Tucson, AZ":"TUS","Tulsa, OK":"TUL","Tupelo, MS":"TUP","Twin Falls, ID":"TWF","Tyler, TX":"TYR","Unalakleet, AK":"UNK","Vail, CO":"EGE","Valdez, AK":"VDZ","Valdosta, GA":"VLD","Victoria, TX":"VCT","Visalia, CA":"VIS","Waco, TX":"ACT","Walla Walla, WA":"ALW","Washington DC IAD":"IAD","Washington DC DCA":"DCA","Washington DC WAS":"WAS","Waterloo, IA":"ALO","Watertown, NY":"ART","Watertown, SD":"ATY","Wausau, WI":"CWA","Wenatchee, WA":"EAT","West Palm Beach, FL":"PBI","West Yellowstone, MT":"WYS","White Plains, NY":"HPN","Wichita Falls, TX":"SPS","Wichita, KS":"ICT","Wilkes-Barre, PA":"AVP","Williamsport, PA":"IPT","Williston, ND":"ISN","Wilmington, DE":"ILG","Wilmington, NC":"ILM","Wolf Point, MT":"OLF","Worland, WY":"WRL","Wrangell, AK":"WRG","Yakima, WA":"YKM","Yakutat, AK":"YAK","Yuma, AZ":"YUM",
@@ -121,18 +121,18 @@ var TxtType = function(el, toRotate, period) {
 	$(document.body).on('click', '#submit2', function() {
     	//First adding to array if it is a new city not in the carousel.
     	// This line of code will grab the input from the textbox and trim any extra spaces
-    	console.log("flight's on click is a go")
-		startDate=$("#departingDate").val().trim();
-		endDate=$("#returningDate").val().trim();
-		startDest=$("#usersOrigin").val().trim();
-		console.log(startDest)
-		var airportOrigin=cityToAirport[startDest];
-		console.log(airportOrigin)
-		endDest=$("#usersDestination").val();
-		console.log(endDest);
-		var airportDestination=cityToAirport[endDest];
+    	console.log("flight's on click is a go");
+		departdate=$("#departingDate").val().trim();
+		returndate=$("#returningDate").val().trim();
+		departcity=$("#usersOrigin").val().trim();
+		console.log(departcity);
+		var airportOrigin=cityToAirport[destcity];
+		console.log(airportOrigin);
+		destcity=$("#usersDestination").val();
+		console.log(destcity);
+		var airportDestination=cityToAirport[destcity];
 		console.log(airportDestination);
-		numPeople=$("#volunteers").val().trim();
+		numvol=$("#volunteers").val().trim();
     	var newCity = $('#usersDestination').val().trim();
 
     	//Object for volunteer match search
@@ -174,10 +174,11 @@ var TxtType = function(el, toRotate, period) {
          		volResults.append(oppTitle);
           		//End date
          		 if (volMatch[j].availability.endDate == null) {
-           			var endingDate = $('<div class="row" id="end">').text("End Date: Ongoing");
-         		}
+					 var endingDate;
+					 endingDate = $('<div class="row" id="end">').text("End Date: Ongoing");
+				 }
          		else {
-         			var endingDate = $('<div class="row" id="end">').text("End Date: " + volMatch[j].availability.endDate);
+         			 endingDate = $('<div class="row" id="end">').text("End Date: " + volMatch[j].availability.endDate);
           		}
           		//Appending to the title
           		volResults.append(endingDate);
@@ -189,13 +190,14 @@ var TxtType = function(el, toRotate, period) {
           		volResults.append(loc);
           		//Images URL is encoded. Decoding the url and replacing empty picture with placeholder.
                 if (volMatch[j].imageUrl == null) {
-          			var imgURL = $('<img src="assets/images/noImage.jpg">')
-            		.addClass('volImg');        
-          		}
+					var imgURL;
+					imgURL = $('<img src="assets/images/noImage.jpg">')
+						.addClass('volImg');
+				}
           		else {
             		var encImgURL = volMatch[j].imageUrl;
             		var decImgURL = decodeURIComponent(encImgURL);
-            		var imgURL = $('<img>')
+            		imgURL = $('<img>')
               		.addClass('volImg')
               		.attr('src', decImgURL);
           		}
@@ -208,7 +210,7 @@ var TxtType = function(el, toRotate, period) {
          		//Volunteer Match URL
           		var encMatchURL = volMatch[j].vmUrl;
          		var decMatchURL = decodeURIComponent(encMatchURL);
-         		var matchURL = $('<a>Click here for more information!</a>')
+         		var matchURL = $("<a>Click here for more information!</a>")
             		.addClass('.volMatchURL')
             		.attr('href', decMatchURL)
             		.attr("target","_blank");
