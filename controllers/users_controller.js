@@ -29,7 +29,6 @@ router.post('/login', function(req, res) {
     models.User.findOne({
         where: {email: req.body.email}
     }).then(function(user) {
-
         if (user == null){
             res.redirect('/users/sign-in')
         }
