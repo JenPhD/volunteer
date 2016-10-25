@@ -3,8 +3,8 @@ module.exports = function(sequelize, DataTypes) {
   var Trip = sequelize.define('Trip', {
     depcity: DataTypes.STRING,
     destcity: DataTypes.STRING,
-    depart: DataTypes.DATE,
-    return: DataTypes.DATE,
+    departdate: DataTypes.DATE,
+    returndate: DataTypes.DATE,
     numvol: DataTypes.INTEGER
   }, {
     // so updatedAt will be updated_at
