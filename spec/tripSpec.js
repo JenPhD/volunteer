@@ -1,36 +1,44 @@
-// Jasmine test for inputting flight, hotel, and volunteer information //
+describe('create username and password', function(){
+	var request = require('supertest');
+	var express = require('express');
+	var app = express();
+	
+	var bodyParser = require('body-parser');
+	app.use(bodyParser.json());
+	app.use(bodyParser.urlencoded({ extended: false }));
+	var session = require('express-session');
 
-// check for nothing when form is empty and test will check for a json upon hittig the search button and check wrong info format (api call) 
+	var cookieParser = require('cookie-parser');
+	app.use(session({ secret: 'app', cookie: { maxAge: 60000 }, resave: true, saveUninitialized: true}));
+	app.use(cookieParser());
 
-// describe('Search', function(){	
-// 	var Trip = require("../models/trip.js");
-// 	var trip;
-// 	var submit = function(){
-// 		throw new TypeError("error");
-// 	};
-			
-// 	it('Will display nothing when form is empty.', function(){
-// 	expect(submit()).tobe(" ");
-// 	});
- 
-// 	it('Display data from api.', function(){
-// 		expect(trip).tobe(true);
-// 	});
+	var server;
+	var router = require("../controllers/trips_controller.js");
+	app.use(router);
 
-// 	it('Flying from has been selected.', function(){
-// 		expect(submit(Trip.depcity)).tobe(true);
-// 	});
+	beforeEach(function(){
+		server = app.listen(3000);
+	})
 
-// 	it('Flying to has been selected.', function(){
-// 		expect(submit(Trip.destcity)).tobe(true);
-// 	});
+	afterEach(function(){
+		server.close();
+	})
 
-// 	it('Departure date has been selected.', function(){
-// 		expect(submit(Trip.depfly)).tobe(true)
-// 	});
-
-// 	it('Return date has been selected.', function(){
-// 		expect(submit(Trip.retfly)).tobe(true);
-// 	});
-
-// });
+	it("does not responds to /login", function(done){
+		request(server)
+		.post('/login')
+		.send({
+			// hard code from mysql selections to test database //
+			destcity: req.body.destcity,
+            depart: req.body.depart,
+            return: req.body.return,
+            numvol: req.body.numvol,
+        })
+        .set('Accept', 'application/json')
+        .end(function(err, res){
+        	var location = res.header.location;
+        	expect(location).tobe("/trips");
+        	done()
+        })
+    });
+})

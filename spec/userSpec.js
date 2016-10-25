@@ -1,19 +1,21 @@
-// Jasmine unit testing to determine if form, submit, and error message function are working properly //
+
 
 describe('create username and password', function(){
 	var request = require('supertest');
 	var express = require('express');
 	var app = express();
-	var bodyParser = require('body-parser');
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-var session = require('express-session');
 
-var cookieParser = require('cookie-parser');
-app.use(session({ secret: 'app', cookie: { maxAge: 60000 }, resave: true, saveUninitialized: true}));
-app.use(cookieParser());
-	var router = require("../controllers/users_controller.js");
+	var bodyParser = require('body-parser');
+	app.use(bodyParser.json());
+	app.use(bodyParser.urlencoded({ extended: false }));
+	var session = require('express-session');
+
+	var cookieParser = require('cookie-parser');
+	app.use(session({ secret: 'app', cookie: { maxAge: 60000 }, resave: true, saveUninitialized: true}));
+	app.use(cookieParser());
+
 	var server;
+	var router = require("../controllers/users_controller.js");
 	app.use(router);
 
 	beforeEach(function(){
