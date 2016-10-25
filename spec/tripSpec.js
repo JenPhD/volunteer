@@ -28,7 +28,7 @@ describe('create username and password', function(){
 		request(server)
 		.post('/login')
 		.send({
-			// hard code from mysql selections to test database //
+			// hard code from mysql selections to test from database //
 			destcity: req.body.destcity,
             depart: req.body.depart,
             return: req.body.return,

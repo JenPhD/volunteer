@@ -1,6 +1,6 @@
 
-
-describe('create username and password', function(){
+//  
+describe('login username and password', function(){
 	var request = require('supertest');
 	var express = require('express');
 	var app = express();
