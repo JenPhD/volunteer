@@ -31,6 +31,7 @@ describe('Login username and password', function(){
 		request(server)
 		.post('/login')
 		.send({
+			// user name and password //
 			email: 'mcflasco@gmail.com',
 			password: '12345'
 		})
