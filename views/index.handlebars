@@ -25,67 +25,80 @@
 			<h1>What do we do?</h1>
 			<h2>We help you relax and give back to the communities you visit</h2>
 			<div class="col-sm-4" id="destination_explained">
-				<div class="plane"><i class="fa fa-plane" aria-hidden="true"></i></div>
-				<p>Pick a flight!
+				<a href="/trips/flights" class="flightsearch">
+                    <div class="plane"><i class="fa fa-plane" aria-hidden="true"></i></div>
+                        <p>Pick a flight!
+                </a>
 			</div>
 			<div class="col-sm-4">
 				<div class="volunteer_explained">
-					<div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
-					<p>Pick the cause you believe in to give back to the community you're visiting, and we'll make your itinerary.
+                    <a href="/trips/volunteer" class="volsearch">
+                        <div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+					        <p>Pick the cause you believe in to give back to the community you're visiting, and we'll make your itinerary.</p>
+                    </a>
 				</div>
 			</div>
 			<div class="col-sm-4">
 				<div class="hotels_explained">
-					<div class="hotel"><i class="fa fa-bed" aria-hidden="true"></i></div>
-					<p>Find a great place to stay at a discounted rate!</p>
+                    <a href="/trips/volunteer" class="hotelsearch">
+                        <div class="hotel"><i class="fa fa-bed" aria-hidden="true"></i></div>
+                            <p>Find a great place to stay at a discounted rate!</p>
+                    </a>
 				</div>
 			</div>
 		</div>
 
 	</div>
-    <div class="form-group">
-        <div class="row">
-            <div class="col-md-4">
-                <label for="usersOrigin">Flying from</label> <i class="fa fa-plane" aria-hidden="true"></i><br>
-                <input type="text" class="form-control awesomplete" id="usersOrigin" placeholder="City, State (ex: Orlando,FL)*">
-            </div>
-            <div class="col-md-4">
-                <label for="usersDestination">Flying to</label> <i class="fa fa-plane" aria-hidden="true"></i><br>
-                <input type="text" class="form-control awesomplete" id="usersDestination" placeholder="City, State (ex: Orlando,FL)*">
-            </div>
-        </div>
-    </div>
 
-    <div class="form-group">
-        <div class="row">
-            <div class="col-md-4"
-            <label for="departingDate">Departing Date</label>
-            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-            <input type="date" class="form-control" id="departingDate">
-        </div>
-        <div class="col-md-4">
-            <label for="returningDate">Returning Date</label>
-            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-            <input type="date" class="form-control" id="returningDate">
-        </div>
-        <div class="col-md-4">
-            <label for="volunteers"> Number of volunteers</label>
-            <select id="volunteers" class="form-control">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>more than 6</option> <!-- if more than six have user specify a number -->
-            </select>
-        </div>
-    </div>
+    <!--input form-->
+    {{#if logged_in}}
+        <form class="create-update-form" action="trips/create" method="POST">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="usersOrigin">Flying from</label> <i class="fa fa-plane" aria-hidden="true"></i><br>
+                        <input type="text" name="usersOrigin" class="awesomplete" id="usersOrigin" placeholder="City, State (ex: Orlando,FL)*">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="usersDestination">Flying to</label> <i class="fa fa-plane" aria-hidden="true"></i><br>
+                        <input type="text" name="usersDestination" class="form-control awesomplete" id="usersDestination" placeholder="City, State (ex: Orlando,FL)*">
+                        <form action="trips/update/{{this.id}}?_method=PUT" method="POST">
+                    </div>
+                </div>
+            </div>
 
-    <button type="submit" class="btn btn-default" id="submit2"><span class='fa fa-search' aria-hidden="true"></span> Search</button>
-    <button type="submit" class="btn btn-default" id="submit3"><span class='fa fa-floppy-o' aria-hidden="true"> </span> Save Search</button>
-    <p>*destinations are limited to the United States</p>
-    </form>
-</div>
-</div> <!-- end of form container -->
-</div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-4"
+                    <label for="departingDate">Departing Date</label>
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                    <input type="date" name="departingDate" class="form-control" id="departingDate">
+                </div>
+                <div class="col-md-4">
+                    <label for="returningDate">Returning Date</label>
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                    <input type="date" name="returningDate" class="form-control" id="returningDate">
+                </div>
+                <div class="col-md-4">
+                    <label for="volunteers"> Number of volunteers</label>
+                    <select id="volunteers" name="volunteers" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>more than 6</option> <!-- if more than six have user specify a number -->
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-default" id="submit2"><span class='fa fa-search' aria-hidden="true"></span> Search</button>
+            <button type="submit" class="btn btn-default" id="submit3"><span class='fa fa-floppy-o' aria-hidden="true"> </span> Save Search</button>
+            <p>*destinations are limited to the United States</p>
+            </form>
+        </form>
+    {{/if}}
+
+
+</div><!-- end of  container -->
