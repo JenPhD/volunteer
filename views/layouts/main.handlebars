@@ -36,8 +36,53 @@
         <a href="/users/sign-out">Sign Out</a>
     {{/if}}
 </p>
+	
+{{!-- <header> --}}  <!--tpyewriter effect and sign in for users -->
+		
+		{{!-- {{#unless logged_in}}
+                    <a href="#" style="float:right;" class="clearfix"> Sign up to plan your volunteer trip!! </a>
+                {{/unless}} --}}
+		
+		{{!-- <div id="typewriter">
+			<h1 class="typewrite" data-period="2000" data-type='["Seattle,WA","Los Angeles,CA","Orlando,FL","Volunteer There...", "Volunteer Anywhere", "Your Adventure Awaits!"]'>
+			<span class="wrap"></span>
+			</h1>
+		</div>
+		<nav>
+			<ul>
+                {{#if name}}
+                    Welcome {{name}}!
+                {{/if}}
+			</ul>
+		</nav>
+	</header> --}}
+
+
 
 	{{{ body }}}
+	
+	<div class=mainContent><!--Content that explains what we do -->			
+		<div class="row" id="information">
+			<h1>What do we do?</h1>
+			<h2>We help you relax and give back to the communities you visit</h2>
+			<div class="col-sm-4" id="destination_explained">
+				<div class="plane"><i class="fa fa-plane" aria-hidden="true"></i></div>
+				<p>Pick a flight!
+			</div>
+			<div class="col-sm-4">
+				<div class="volunteer_explained">
+					<div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+					<p>Pick the cause you believe in to give back to the community you're visiting, and we'll make your itinerary.
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="hotels_explained">
+					<div class="hotel"><i class="fa fa-bed" aria-hidden="true"></i></div>
+					<p>Find a great place to stay at a discounted rate!</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- jQuery 2.2.4 -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
