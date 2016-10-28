@@ -5,7 +5,11 @@ module.exports = function(sequelize, DataTypes) {
     destcity: DataTypes.STRING,
     departdate: DataTypes.DATE,
     returndate: DataTypes.DATE,
-    numvol: DataTypes.INTEGER
+    numvol: DataTypes.INTEGER,
+    itinerary: {
+    type: DataTypes.BOOLEAN,
+        defaultValue: false
+    }
   }, {
     // so updatedAt will be updated_at
     underscored: true,
@@ -24,6 +28,6 @@ module.exports = function(sequelize, DataTypes) {
         })
       }
     }
-  })
+  });
   return Trip;
 };

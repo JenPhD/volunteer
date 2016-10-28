@@ -71,6 +71,12 @@ a:hover{
 	font-size:48px;
 	text-align:center;
 }
+
+
+#savetrips {
+	color:white;
+)
+
 @media(max-width:850px){
 	.mainContent{
 		height:400px;
