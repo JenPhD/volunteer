@@ -5,10 +5,10 @@
 	<title>Volunteer Here</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Awesomplete Autocomplete -by Lea Verou -->
-  	<link rel="stylesheet" href="/assets/css/awesomplete.css" />
-  	<!-- Awesomplete Autocomplete -by Lea Verou -->
-	<script src="/assets/javascript/awesomplete.js" async></script>
+    <!-- Awesomplete Autocomplete -by Lea Verou -->
+    <link rel="stylesheet" href="/assets/css/awesomplete.css" />
+    <!-- Awesomplete Autocomplete -by Lea Verou -->
+    <script src="/assets/javascript/awesomplete.js"></script>
 	<!--Google fonts-->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i|Pacifico" rel="stylesheet">
 	<!--Bootstrap-->
@@ -18,9 +18,9 @@
 	<!-- Font Awesome link -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<!-- Site specific overrides -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style1.css">
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-    <!-- Local javascript operations file -->
-    <script src="/assets/javascript/app.js"></script>
+
 
 </head>
 <body>
@@ -36,57 +36,18 @@
         <a href="/users/sign-out">Sign Out</a>
     {{/if}}
 </p>
-	
-{{!-- <header> --}}  <!--tpyewriter effect and sign in for users -->
-		
-		{{!-- {{#unless logged_in}}
-                    <a href="#" style="float:right;" class="clearfix"> Sign up to plan your volunteer trip!! </a>
-                {{/unless}} --}}
-		
-		{{!-- <div id="typewriter">
-			<h1 class="typewrite" data-period="2000" data-type='["Seattle,WA","Los Angeles,CA","Orlando,FL","Volunteer There...", "Volunteer Anywhere", "Your Adventure Awaits!"]'>
-			<span class="wrap"></span>
-			</h1>
-		</div>
-		<nav>
-			<ul>
-                {{#if name}}
-                    Welcome {{name}}!
-                {{/if}}
-			</ul>
-		</nav>
-	</header> --}}
 
+{{{ body }}}
 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--Google maps API-->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaUyn2RKcE8ngjkzT_MdoiUYyVodn4X3g&libraries=places&callback=initMap"
+            async defer></script>-->
+    <!-- Local javascript operations files -->
+    <script type="text/javascript" src="/assets/javascript/app1.js"></script>
+    <script type="text/javascript" src="/assets/javascript/app.js"></script>
 
-	{{{ body }}}
-	
-	<div class=mainContent><!--Content that explains what we do -->			
-		<div class="row" id="information">
-			<h1>What do we do?</h1>
-			<h2>We help you relax and give back to the communities you visit</h2>
-			<div class="col-sm-4" id="destination_explained">
-				<div class="plane"><i class="fa fa-plane" aria-hidden="true"></i></div>
-				<p>Pick a flight!
-			</div>
-			<div class="col-sm-4">
-				<div class="volunteer_explained">
-					<div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
-					<p>Pick the cause you believe in to give back to the community you're visiting, and we'll make your itinerary.
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="hotels_explained">
-					<div class="hotel"><i class="fa fa-bed" aria-hidden="true"></i></div>
-					<p>Find a great place to stay at a discounted rate!</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- jQuery 2.2.4 -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>

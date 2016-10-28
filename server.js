@@ -61,6 +61,7 @@ app.use('/', application_controller);
 app.use('/trips', trips_controller);
 app.use('/users', users_controller);
 
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
