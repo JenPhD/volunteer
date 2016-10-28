@@ -12,7 +12,6 @@ var router = express.Router();
 //Get, renders volunteer opportunities
 router.get('/volunteer', function(req,res) {
     res.render('trips/volunteer', {
-        volMatch: volMatch
     });
 });
 
