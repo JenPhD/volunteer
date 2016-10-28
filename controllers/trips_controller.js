@@ -6,6 +6,8 @@ var express = require('express');
 var router = express.Router();
 
 //this is the trips_controller.js file
+
+
 // =================================================================
 // Routes
 // =================================================================
