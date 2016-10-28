@@ -67,7 +67,7 @@ router.post('/create', function(req,res) {
 
         if (users.length > 0){
             console.log(users);
-            res.send('we already have an email or username for this account')
+            res.send('we already have an email or username for this account');
         } else {
             // Using bcrypt, generate a 10-round salt,
             // then use that salt to hash the user's password.
