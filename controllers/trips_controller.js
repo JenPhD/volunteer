@@ -6,8 +6,6 @@ var express = require('express');
 var router = express.Router();
 
 //this is the trips_controller.js file
-
-
 // =================================================================
 // Routes
 // =================================================================
@@ -47,6 +45,12 @@ router.get('/', function (req, res) {
             user_id: req.session.user_id,
             email: req.session.email,
             logged_in: req.session.logged_in,
+            depcity: req.session.depcity,
+            destcity: req.session.destcity,
+            departdate: req.session.departdate,
+            returndate: req.session.returndate,
+            numvol: req.session.numvol,
+            itinerary: req.session.itinerary,
             trips: trips
         })
     })
