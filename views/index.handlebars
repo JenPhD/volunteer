@@ -12,9 +12,7 @@
         </div>
         <nav>
             <ul>
-                {{#if name}}
-                    Welcome {{name}}!
-                {{/if}}
+
             </ul>
         </nav>
     </header>
@@ -27,7 +25,7 @@
             <div class="col-sm-4" id="destination_explained">
                 <a href="/trips/flights" class="flightsearch">
                     <div class="plane"><i class="fa fa-plane" aria-hidden="true"></i></div>
-                        <p>Pick a flight!
+                        <p>Pick a flight! </p>
                 </a>
             </div>
             <div class="col-sm-4">
@@ -50,9 +48,9 @@
 
     </div>
 
-    <!--input form-->
-    {{#if logged_in}}
-        <form class="create-update-form" action="trips/create" method="POST">
+        <!--input form-->
+                {{#if logged_in}}
+        <form id="searchForm" class="create-update-form" action="trips/create" method="POST">
             <div class="form-group">
                 <div class="row">
                     <div class="col-md-4">
