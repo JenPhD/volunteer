@@ -9,6 +9,9 @@ header{
 	text-align:center;
 	height:200px;
 }
+h1{
+	color: white;
+}
 
 .sign > a {
 	color: white;
@@ -75,13 +78,31 @@ a:active{
 	width:100%;
 	margin-top:5%;
 }
+#signInContentPage{
+	margin-top: 20%;
+}
 #information{
 	padding:30px 30px;
 	text-align:center;
 }
-
-
-#savetrips {
+#flights{
+	background-color: rgba(0, 128, 128, 0.2);
+	text-align: center;
+}
+.container{
+	background-color: rgba(0, 128, 128, 0.2);
+	text-align: center;
+}
+#searchForm{
+	padding:20px;
+	background-color: rgba(0, 128, 128, 0.3);
+	color:white;
+	margin-top: 5%;
+}
+#saved {
+	color:white;
+}
+#itin {
 	color:white;
 }
 
@@ -220,8 +241,8 @@ div.c-wrapper{
 .carousel-inner > .item > img, 
 .carousel-inner > .item > a > img{
 width: 100%; /* use this, or not */
-margin: auto;
-}
+/*margin: auto;
+}*/
 
 /*#featured-destinations{
 	padding: 20px;
