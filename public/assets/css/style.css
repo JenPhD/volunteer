@@ -101,9 +101,15 @@ a:active{
 }
 #saved {
 	color:white;
+	background-color:rgba(0, 128, 128, 0.5);
+
 }
 #itin {
 	color:white;
+	background-color:rgba(0, 128, 128, 0.5);
+}
+ul {
+	list-style: none;
 }
 
 p.sign{
