@@ -38,7 +38,27 @@ nav ul{
 }
 a:hover{
 	text-decoration: none;
-	color:white;
+	color:black;
+	background-color:#008080;
+} 
+a:active{
+	color:black;
+	text-decoration: none;
+}
+.flightsearch{
+	color:black;
+	font-size:24px;
+	padding:5px;
+}
+.volsearch{
+	color:black;
+	font-size:24px;
+	padding:5px;
+}
+.hotelsearch{
+	color:black;
+	font-size:24px;
+	padding:5px;
 }
 
 /*nav ul li{
@@ -51,7 +71,7 @@ a:hover{
 }
 .mainContent{
 	background: white;
-	height:300px;
+	height:400px;
 	width:100%;
 	margin-top:5%;
 }
@@ -59,23 +79,16 @@ a:hover{
 	padding:30px 30px;
 	text-align:center;
 }
-.plane{
-	font-size:48px;
-	text-align:center;
-}
-.heart{
-	font-size:48px;
-	text-align:center;
-}
-.hotel{
-	font-size:48px;
-	text-align:center;
-}
 
 
 #savetrips {
 	color:white;
-)
+}
+
+p.sign{
+	font-size:18px;
+	padding:20px;
+}
 
 @media(max-width:850px){
 	.mainContent{
