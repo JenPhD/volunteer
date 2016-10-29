@@ -106,6 +106,24 @@ a:active{
 	color:white;
 }
 
+.awesomplete {
+	color: black
+}
+
+#usersOrigin #usersDestination {
+	color:black;
+}
+
+.submit {
+	background-color: #40e657;
+	color: whitesmoke;
+}
+
+.submit:hover {
+	background-color: whitesmoke;
+	color: #40e657;
+}
+
 p.sign{
 	font-size:18px;
 	padding:20px;
