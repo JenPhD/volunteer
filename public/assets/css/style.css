@@ -9,6 +9,9 @@ header{
 	text-align:center;
 	height:200px;
 }
+h1{
+	color: white;
+}
 
 .sign > a {
 	color: white;
@@ -31,14 +34,34 @@ nav ul{
 	text-align:center;
 	margin:0;	
 }
-a{
+.sign > a{
 	text-decoration: none;
 	color:white;
 	padding:0px 20px;
 }
 a:hover{
 	text-decoration: none;
-	color:white;
+	color:black;
+	background-color:#008080;
+} 
+a:active{
+	color:black;
+	text-decoration: none;
+}
+.flightsearch{
+	color:black;
+	font-size:24px;
+	padding:5px;
+}
+.volsearch{
+	color:black;
+	font-size:24px;
+	padding:5px;
+}
+.hotelsearch{
+	color:black;
+	font-size:24px;
+	padding:5px;
 }
 
 /*nav ul li{
@@ -51,26 +74,67 @@ a:hover{
 }
 .mainContent{
 	background: white;
-	height:300px;
+	height:400px;
 	width:100%;
 	margin-top:5%;
+}
+#signInContentPage{
+	margin-top: 20%;
 }
 #information{
 	padding:30px 30px;
 	text-align:center;
 }
-.plane{
-	font-size:48px;
-	text-align:center;
+#flights{
+	background-color: rgba(0, 128, 128, 0.2);
+	text-align: center;
 }
-.heart{
-	font-size:48px;
-	text-align:center;
+.container{
+	background-color: rgba(0, 128, 128, 0.2);
+	text-align: center;
 }
-.hotel{
-	font-size:48px;
-	text-align:center;
+#searchForm{
+	padding:20px;
+	background-color: rgba(0, 128, 128, 0.3);
+	color:white;
+	margin-top: 5%;
 }
+#saved {
+	color:white;
+	background-color:rgba(0, 128, 128, 0.5);
+
+}
+#itin {
+	color:white;
+	background-color:rgba(0, 128, 128, 0.5);
+}
+ul {
+	list-style: none;
+}
+
+.awesomplete {
+	color: black
+}
+
+#usersOrigin #usersDestination {
+	color:black;
+}
+
+.submit {
+	background-color: #40e657;
+	color: whitesmoke;
+}
+
+.submit:hover {
+	background-color: whitesmoke;
+	color: #40e657;
+}
+
+p.sign{
+	font-size:18px;
+	padding:20px;
+}
+
 @media(max-width:850px){
 	.mainContent{
 		height:400px;
@@ -201,8 +265,8 @@ div.c-wrapper{
 .carousel-inner > .item > img, 
 .carousel-inner > .item > a > img{
 width: 100%; /* use this, or not */
-margin: auto;
-}
+/*margin: auto;
+}*/
 
 /*#featured-destinations{
 	padding: 20px;
